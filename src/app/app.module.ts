@@ -8,6 +8,7 @@ import {SkuFormComponent} from './sku-form/sku-form.component';
 import { NgFormBuilderComponent } from './ng-form-builder/ng-form-builder.component';
 import { WidthValidationsExplicitComponent } from './width-validations-explicit/width-validations-explicit.component';
 import { WithEventsComponent } from './with-events/with-events.component';
+import { FormNgModelComponent } from './form-ng-model/form-ng-model.component';
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import { WithEventsComponent } from './with-events/with-events.component';
         SkuFormComponent,
         NgFormBuilderComponent,
         WidthValidationsExplicitComponent,
-        WithEventsComponent
+        WithEventsComponent,
+        FormNgModelComponent
     ],
     imports: [
         BrowserModule,
