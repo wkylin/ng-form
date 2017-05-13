@@ -7,13 +7,15 @@ import {AppComponent} from './app.component';
 import {SkuFormComponent} from './sku-form/sku-form.component';
 import { NgFormBuilderComponent } from './ng-form-builder/ng-form-builder.component';
 import { WidthValidationsExplicitComponent } from './width-validations-explicit/width-validations-explicit.component';
+import { WithEventsComponent } from './with-events/with-events.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         SkuFormComponent,
         NgFormBuilderComponent,
-        WidthValidationsExplicitComponent
+        WidthValidationsExplicitComponent,
+        WithEventsComponent
     ],
     imports: [
         BrowserModule,

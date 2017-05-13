@@ -1,5 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators, AbstractControl} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
+
+
+function skuValidator(control: FormControl): { [s: string]: boolean } {
+    if (!control.value.match(/^123/)) {
+        return {invalidSku: true};
+    }
+}
 
 @Component({
     selector: 'app-width-validations-explicit',
@@ -11,7 +18,8 @@ export class WidthValidationsExplicitComponent implements OnInit {
     
     constructor(fb: FormBuilder) {
         this.myForm = fb.group({
-            'sku': ['', Validators.required]
+            // 'sku': ['', Validators.required]
+            'sku': ['', Validators.compose([Validators.required, skuValidator])]
         });
     }
     
